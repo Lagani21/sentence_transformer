@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Forwarded my Amazon receipt from Gmail.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Synced my Kroger loyalty account to Fetch.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Typed in my receipt details manually.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Scanned a Walgreens receipt at 4pm today.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Manually logged the products and store name.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Connected store card for automatic receipt capture.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Entered items and price line-by-line.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Uploaded a photo of the gas station receipt using the app.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Sent digital order confirmation from BestBuy.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Submitted my purchase manually without scanning.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Target receipts show up automatically after syncing.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Filled out the receipt form on the app.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Uploaded a Lyft ride receipt via email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Shared Uber Eats receipt from inbox.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Auto-imported CVS purchases from linked account.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Used the app camera to capture my grocery receipt.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Uploaded e-receipt from Walmart through email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Transaction synced through Walgreens membership.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Snapped a picture of my Starbucks bill.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Scanned the receipt from Target manually with my phone.",
+    "label": "Camera Scan"
+  }
+]
