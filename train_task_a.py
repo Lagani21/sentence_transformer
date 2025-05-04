@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from src.dataset_a import TaskADataset
-from src.sentence_embedder import FetchMultiTaskModel
+from src.model import FetchMultiTaskModel
 from tqdm import tqdm
 
 # ✅ Setup
@@ -30,10 +30,9 @@ for epoch in range(epochs):
         attention_mask = batch['attention_mask'].to(device)
         labels = batch['label'].to(device)
 
-        logits = model.encoder.encode(batch['input_ids'], convert_to_tensor=True).to(device)
-        logits = model.task_a_head(logits)  # Only using Task A head
-
+        logits = model(input_ids=input_ids, attention_mask=attention_mask, task='A')
         loss = loss_fn(logits, labels)
+
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
