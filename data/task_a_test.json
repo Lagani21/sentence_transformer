@@ -1,0 +1,7 @@
+[
+    { "text": "Used my phone to scan a CVS receipt.", "label": "Camera Scan" },
+    { "text": "Uploaded Gmail receipt from Panera.", "label": "Email Upload" },
+    { "text": "Fetch pulled it from my Kroger Plus card.", "label": "Linked Account" },
+    { "text": "Manually typed all items and prices.", "label": "Manual Input" }
+  ]
+  
