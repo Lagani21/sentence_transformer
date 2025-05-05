@@ -1,31 +1,155 @@
 [
   {
-    "text": "Forwarded my Amazon receipt from Gmail.",
+    "text": "Shared Gmail copy of my recent Starbucks order.",
     "label": "Email Upload"
   },
   {
-    "text": "Synced my Kroger loyalty account to Fetch.",
+    "text": "My Amazon orders sync via account link.",
     "label": "Linked Account"
   },
   {
-    "text": "Typed in my receipt details manually.",
+    "text": "BestBuy purchases synced via digital account.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Took a picture of the CVS bill using my phone.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Submitted a photo of my lunch receipt.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Submitted DoorDash receipt from email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Scanned the grocery bill using the app.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Scanned and uploaded a paper bill from Kroger.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Used scan feature to record the fuel receipt.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Sent invoice for Amazon Fresh via email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Snapped a picture of my Starbucks bill.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Linked my Fetch profile with my Kroger Plus card.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Transaction synced through Walgreens membership.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Uploaded my Apple order confirmation from email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Used mobile camera to upload my Trader Joe\u2019s receipt.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Logged my Starbucks receipt manually.",
     "label": "Manual Input"
   },
   {
-    "text": "Scanned a Walgreens receipt at 4pm today.",
+    "text": "Submitted a high-res photo of the store receipt.",
     "label": "Camera Scan"
+  },
+  {
+    "text": "Uploaded movie ticket e-receipt from email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Linked my RiteAid rewards account.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Fetch pulled receipts from my Safeway account.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Manually recorded my gas station purchase.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Entered the store and total amount by myself.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Snapped and submitted a receipt from 7-Eleven.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Emailed a flight booking receipt to Fetch.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Auto-imported CVS purchases from linked account.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Submitted itemized entries manually into Fetch.",
+    "label": "Manual Input"
   },
   {
     "text": "Manually logged the products and store name.",
     "label": "Manual Input"
   },
   {
+    "text": "Uploaded e-receipt from Walmart through email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Shared Uber receipt from Outlook inbox.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Captured the McDonald\u2019s receipt using the app camera.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Submitted my purchase manually without scanning.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Scanned a printed bill and uploaded it.",
+    "label": "Camera Scan"
+  },
+  {
     "text": "Connected store card for automatic receipt capture.",
     "label": "Linked Account"
   },
   {
-    "text": "Entered items and price line-by-line.",
+    "text": "Used in-app camera to scan my Whole Foods receipt.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Photographed a Target receipt with the app.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Uploaded a Lyft ride receipt via email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Manually typed my restaurant order into the app.",
     "label": "Manual Input"
+  },
+  {
+    "text": "Took a snapshot of the printed invoice.",
+    "label": "Camera Scan"
   },
   {
     "text": "Uploaded a photo of the gas station receipt using the app.",
@@ -36,7 +160,103 @@
     "label": "Email Upload"
   },
   {
-    "text": "Submitted my purchase manually without scanning.",
+    "text": "Auto-imported recent orders from linked CVS account.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Scanned the receipt from Target manually with my phone.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Sam\u2019s Club receipt showed up via sync.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Forwarded a concert ticket receipt.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "No scan or sync \u2014 just manual receipt logging.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Sent Walgreens digital invoice to Fetch email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Entered items and price line-by-line.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Submitted Airbnb payment receipt via email.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Typed in my receipt details manually.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Filled out the receipt form on the app.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Transactions from Giant Eagle are auto-added.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "I typed each item and the total manually.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Used the app camera to capture my grocery receipt.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Mailed in a receipt from Instacart.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Walgreens digital loyalty card is connected.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Forwarded my Amazon receipt from Gmail.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Synced up Whole Foods digital account.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Sent in a hotel booking receipt from Gmail.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Synced BJ\u2019s membership for receipt imports.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Entered line items and totals by hand.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Fetch auto-syncs with my Meijer account.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Didn't use camera or email \u2014 added everything manually.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "I input each item by hand instead of uploading a photo.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Scanned a Walgreens receipt at 4pm today.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Manually filled the fields instead of scanning.",
     "label": "Manual Input"
   },
   {
@@ -44,39 +264,59 @@
     "label": "Linked Account"
   },
   {
-    "text": "Filled out the receipt form on the app.",
+    "text": "Costco transactions are imported via account link.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Synced my Kroger loyalty account to Fetch.",
+    "label": "Linked Account"
+  },
+  {
+    "text": "Gmail receipt from Domino\u2019s was uploaded.",
+    "label": "Email Upload"
+  },
+  {
+    "text": "Wrote down the details from my printed receipt.",
     "label": "Manual Input"
   },
   {
-    "text": "Uploaded a Lyft ride receipt via email.",
+    "text": "Inputted details from a handwritten bill.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Snapped the bill with Fetch's scan option.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Forwarded my Grubhub order confirmation.",
     "label": "Email Upload"
+  },
+  {
+    "text": "Used the mobile scan feature to upload my receipt.",
+    "label": "Camera Scan"
+  },
+  {
+    "text": "Used the 'manual entry' section in the app.",
+    "label": "Manual Input"
+  },
+  {
+    "text": "Didn't upload anything, just wrote it all in.",
+    "label": "Manual Input"
   },
   {
     "text": "Shared Uber Eats receipt from inbox.",
     "label": "Email Upload"
   },
   {
-    "text": "Auto-imported CVS purchases from linked account.",
+    "text": "Publix purchases appear from my linked card.",
     "label": "Linked Account"
   },
   {
-    "text": "Used the app camera to capture my grocery receipt.",
-    "label": "Camera Scan"
-  },
-  {
-    "text": "Uploaded e-receipt from Walmart through email.",
+    "text": "Sent over a digital purchase receipt.",
     "label": "Email Upload"
   },
   {
-    "text": "Transaction synced through Walgreens membership.",
+    "text": "My digital Target account pulls in receipts.",
     "label": "Linked Account"
-  },
-  {
-    "text": "Snapped a picture of my Starbucks bill.",
-    "label": "Camera Scan"
-  },
-  {
-    "text": "Scanned the receipt from Target manually with my phone.",
-    "label": "Camera Scan"
   }
 ]
