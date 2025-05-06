@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '')))
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
-from src.dataset_a import TaskADataset
+from dataset import TaskADataset
 from src.model import FetchMultiTaskModel
 from tqdm import tqdm
 from sklearn.metrics import classification_report, confusion_matrix

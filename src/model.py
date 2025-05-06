@@ -17,4 +17,5 @@ class FetchMultiTaskModel(nn.Module):
         if task == 'A':
             return self.task_a_head(pooled_output)
         elif task == 'B':
-            return self.task_b_head(pooled_output)
+            return self.task_b_head(pooled_output).squeeze(-1)
+
