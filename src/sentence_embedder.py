@@ -1,20 +1,29 @@
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import SentenceTransformer, models
 import numpy as np
 
-# Load the pre-trained sentence embedding model
-model = SentenceTransformer('all-MiniLM-L6-v2')
+# Step 1: Load transformer (MiniLM)
+word_embedding_model = models.Transformer('sentence-transformers/all-MiniLM-L6-v2')
 
-# Sample input sentences
+# Step 2: Replace pooling with max pooling
+pooling_model = models.Pooling(
+    word_embedding_model.get_word_embedding_dimension(),
+    pooling_mode_mean_tokens=False,   # turn off mean pooling
+    pooling_mode_max_tokens=True,     # turn on max pooling
+    pooling_mode_cls_token=False      # optional: disable CLS if not needed
+)
+
+# Step 3: Create model
+model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
+
+# Step 4: Encode sample sentences
 sentences = [
     "Machine learning is fascinating.",
     "Transformers are powerful models for NLP.",
-    "I enjoy working on deep learning projects."
+    "I like pizza."
 ]
-
-# Generate fixed-length sentence embeddings
 embeddings = model.encode(sentences)
 
-# Print results
+# Step 5: View results
 print("Sentence Embeddings:\n")
 for sentence, embedding in zip(sentences, embeddings):
     print(f"Sentence: {sentence}")
