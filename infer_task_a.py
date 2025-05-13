@@ -14,7 +14,7 @@ model.eval()
 
 tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
 
-# Label map (same as training)
+# Label map
 label_map = {
     0: "Camera Scan",
     1: "Email Upload",
@@ -22,23 +22,21 @@ label_map = {
     3: "Manual Input"
 }
 
-# Input sentence(s)
-sentences = [
-    "Scanned my Walmart receipt using the app",
-    "Uploaded Uber Eats receipt from Gmail",
-    "Entered receipt details manually in the form"
-]
+print("\nEnter a receipt description (type 'exit' to quit):\n")
 
-# Tokenize
-encoded = tokenizer(sentences, padding=True, truncation=True, return_tensors="pt").to(device)
+while True:
+    user_input = input("Your input: ").strip()
+    if user_input.lower() in ["exit", "quit"]:
+        print("Exiting.")
+        break
 
-# Predict
-with torch.no_grad():
-    logits = model(input_ids=encoded["input_ids"], attention_mask=encoded["attention_mask"], task='A')
-    preds = torch.argmax(logits, dim=1)
+    # Tokenize the single input
+    encoded = tokenizer([user_input], padding=True, truncation=True, return_tensors="pt").to(device)
 
-# Output results
-for sentence, pred in zip(sentences, preds):
-    print(f"📄 Sentence: {sentence}")
-    print(f"🎯 Predicted Receipt Type: {label_map[pred.item()]}")
-    print("-" * 60)
+    # Predict
+    with torch.no_grad():
+        logits = model(input_ids=encoded["input_ids"], attention_mask=encoded["attention_mask"], task='A')
+        pred = torch.argmax(logits, dim=1).item()
+
+    print(f"Predicted Receipt Type: {label_map[pred]}")
+    print("-" * 50)
