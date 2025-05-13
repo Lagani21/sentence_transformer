@@ -6,32 +6,27 @@ import torch
 from transformers import AutoTokenizer
 from src.model import FetchMultiTaskModel
 
-# Device setup
+# Setup
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-# Load model
 model = FetchMultiTaskModel().to(device)
 model.load_state_dict(torch.load("fetch_task_b_model.pth", map_location=device))
 model.eval()
 
-# Load tokenizer
 tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
 
-print("\nEnter a receipt description (type 'exit' to quit):\n")
+print("\nType a user complaint (type 'exit' to quit):\n")
 
 while True:
-    user_input = input("Your input: ").strip()
-    if user_input.lower() in ["exit", "quit"]:
-        print("Exiting. Goodbye!")
+    text = input("Support message: ").strip()
+    if text.lower() in ["exit", "quit"]:
+        print("Done.")
         break
 
-    # Tokenize input
-    encoded = tokenizer([user_input], padding=True, truncation=True, return_tensors="pt").to(device)
+    encoded = tokenizer([text], padding=True, truncation=True, return_tensors="pt").to(device)
 
-    # Predict
     with torch.no_grad():
-        score = model(input_ids=encoded["input_ids"], attention_mask=encoded["attention_mask"], task='B')
-        score = score.item()
+        pred = model(input_ids=encoded["input_ids"], attention_mask=encoded["attention_mask"], task='B')
+        pred_score = round(pred.item(), 2)
 
-    print(f"Predicted Score: {score:.4f}")
+    print(f"Predicted Frustration Score: {pred_score}")
     print("-" * 50)
