@@ -1,3 +1,4 @@
+#Task B training: Frustration Score Prediction
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '')))
@@ -10,7 +11,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 from src.dataset import TaskBDataset
 from src.model import FetchMultiTaskModel
 
-# ✅ Setup
+# Setup
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 dataset = TaskBDataset("data/task_b_samples.json")
 loader = DataLoader(dataset, batch_size=4, shuffle=True)
@@ -19,7 +20,7 @@ model = FetchMultiTaskModel().to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=2e-5)
 loss_fn = nn.MSELoss()
 
-# ✅ Training loop
+# Training loop
 epochs = 5
 for epoch in range(epochs):
     model.train()
@@ -49,6 +50,6 @@ for epoch in range(epochs):
 
     print(f"Epoch {epoch+1} — Loss: {avg_loss:.4f} | MSE: {mse:.4f} | MAE: {mae:.4f}")
 
-# ✅ Save model
+# Save model
 torch.save(model.state_dict(), "fetch_task_b_model.pth")
 print("Model saved as fetch_task_b_model.pth")

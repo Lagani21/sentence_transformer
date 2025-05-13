@@ -34,9 +34,9 @@ with torch.no_grad():
         all_labels.extend(labels.cpu().numpy())
 
 # Report
-print("\n🧪 Evaluation Report:")
+print("\n Evaluation Report:")
 print(classification_report(
     all_labels, all_preds, target_names=["Camera Scan", "Email Upload", "Linked Account", "Manual Input"]
 ))
-print("📊 Confusion Matrix:")
+print(" Confusion Matrix:")
 print(confusion_matrix(all_labels, all_preds))

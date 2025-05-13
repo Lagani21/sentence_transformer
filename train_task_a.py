@@ -1,3 +1,4 @@
+#Task A Training: Receipt Type Classification
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '')))
@@ -11,7 +12,7 @@ from tqdm import tqdm
 from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 
-# ✅ Setup
+# Setup
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 dataset = TaskADataset("data/task_a_samples.json")
 loader = DataLoader(dataset, batch_size=4, shuffle=True)
@@ -20,7 +21,7 @@ model = FetchMultiTaskModel().to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=2e-5)
 loss_fn = nn.CrossEntropyLoss()
 
-# ✅ Training loop
+# Training loop
 epochs = 5
 for epoch in range(epochs):
     total_loss = 0
@@ -64,6 +65,6 @@ for epoch in range(epochs):
     print("-" * 60)
 
 
-# ✅ Save the model
+# Save the model
 torch.save(model.state_dict(), "fetch_task_a_model.pth")
 print("Model saved as fetch_task_a_model.pth")
