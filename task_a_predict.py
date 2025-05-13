@@ -21,12 +21,12 @@ label_map = {
     3: "Manual Input"
 }
 
-print("\n📥 Enter a receipt description (type 'exit' to quit):\n")
+print("\n Enter a receipt description (type 'exit' to quit):\n")
 
 while True:
-    user_input = input("📝 Your input: ").strip()
+    user_input = input("Your input: ").strip()
     if user_input.lower() in ["exit", "quit"]:
-        print("👋 Exiting. Goodbye!")
+        print("Exiting. Goodbye!")
         break
 
     # Tokenize
@@ -37,5 +37,5 @@ while True:
         logits = model(input_ids=encoded["input_ids"], attention_mask=encoded["attention_mask"], task='A')
         pred = torch.argmax(logits, dim=1).item()
 
-    print(f"🎯 Predicted Receipt Type: {label_map[pred]}")
+    print(f"Predicted Receipt Type: {label_map[pred]}")
     print("-" * 50)
